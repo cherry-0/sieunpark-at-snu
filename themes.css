@@ -13,7 +13,7 @@ body {
 
 header, footer {
   background-color: var(--primary);
-  color: white;
+  color: var(--background);
 }
 
 a {
