@@ -6,7 +6,7 @@
   <title>Sieun Park | HCI Researcher</title>
   <style>
     body {
-      font-family: Helvetica;
+      font-family: Helvetica, sans-serif;
       margin: 0;
       padding: 0;
       line-height: 1.6;
@@ -21,52 +21,69 @@
       justify-content: space-between;
       align-items: center;
       flex-wrap: wrap;
+      border-bottom: 1px solid #ccc;
     }
     header h1 {
       margin: 0;
-      font-size: 2rem;
+      font-size: 1.8rem;
     }
     nav a {
       color: #fff;
       margin-left: 1rem;
       text-decoration: none;
-      font-weight: bold;
+      font-weight: 500;
     }
     nav a:hover {
       text-decoration: underline;
     }
     .container {
-      max-width: 900px;
+      display: flex;
+      max-width: 1000px;
       margin: 2rem auto;
       padding: 0 1rem;
+      flex-wrap: wrap;
     }
-    section {
+    .sidebar {
+      flex: 1 1 250px;
+      max-width: 250px;
+      text-align: center;
+      padding-right: 2rem;
+    }
+    .sidebar img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      margin-bottom: 1rem;
+    }
+    .sidebar h2 {
+      margin: 0.5rem 0 0.2rem;
+    }
+    .sidebar p {
+      margin: 0.2rem 0;
+    }
+    .sidebar a {
+      display: block;
+      margin: 0.3rem 0;
+      color: #3498db;
+    }
+    .main-content {
+      flex: 3 1 600px;
+    }
+    .main-content section {
       margin-bottom: 2rem;
     }
-    h2 {
+    .main-content h2 {
       color: #2c3e50;
       border-bottom: 2px solid #ddd;
       padding-bottom: 0.3rem;
+      margin-top: 0;
     }
     footer {
       text-align: center;
       padding: 1rem;
       background-color: #99c8f7;
       color: #fff;
-    }
-    a {
-      color: #3498db;
-      text-decoration: none;
-    }
-    .profile {
-      display: flex;
-      align-items: center;
-      gap: 1.5rem;
-      flex-wrap: wrap;
-    }
-    .profile img {
-      max-width: 150px;
-      border-radius: 50%;
+      margin-top: 2rem;
     }
   </style>
 </head>
@@ -82,14 +99,23 @@
   </header>
 
   <div class="container">
-    <section class="profile">
-      <img src="profile.jpg" alt="Profile picture of Sieun Park" />
-      <div>
+    <aside class="sidebar">
+      <img src="profile.jpg" alt="Sieun Park profile photo" />
+      <h2>Sieun Park</h2>
+      <p>sieun@snu.ac.kr</p>
+      <a href="cv_2024.pdf">📄 CV</a>
+      <a href="https://github.com/YOURUSERNAME">🐙 GitHub</a>
+      <a href="https://linkedin.com/in/YOURUSERNAME">💼 LinkedIn</a>
+    </aside>
+
+    <main class="main-content">
+      <section>
+        <h2>About Me</h2>
         <p>I am a PhD candidate in the Artificial Intelligence Interdisciplinary Program at Seoul National University (SNU), advised by Prof. Youngki Lee in the Human-Centered Computer Systems Lab.</p>
         <p>I am interested in how <strong>large language models</strong> and <strong>mixed reality interfaces</strong> can be applied to build usable, personalized, and socially grounded systems. My work is driven by a commitment to designing technologies that are transparent, supportive, and aligned with human needs in everyday settings.</p>
         <p>My research focuses on developing <strong>situated support systems</strong> that assist users in real-world tasks—particularly in early education and collaborative virtual environments. I build systems that respond to user input, task progress, and interaction context to provide <strong>graduated assistance that balances user support with context-sensitive privacy control</strong>.</p>
-      </div>
-    </section>
+      </section>
+    </main>
   </div>
 
   <footer>
