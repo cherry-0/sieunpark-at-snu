@@ -28,7 +28,7 @@ body {
 header {
   background-color: var(--primary);
   color: var(--heading);
-  padding: 1rem 2rem;
+  padding: 2rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -76,10 +76,11 @@ nav a:hover {
   margin-bottom: 1rem;
 }
 .sidebar h2 {
+  color: var(--heading);
   margin: 0.5rem 0 0.2rem;
 }
 .sidebar p {
-  margin: 0.2rem 0;
+  margin: 0.3rem 0;
 }
 .sidebar a {
   display: block;
