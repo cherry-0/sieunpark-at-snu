@@ -101,8 +101,7 @@ footer {
   text-align: center;
   padding: 1rem;
   background-color: var(--primary);
-  color: white;
-  margin-top: 2rem;
+  color: var(--background);
 }
 
 /* Links */
