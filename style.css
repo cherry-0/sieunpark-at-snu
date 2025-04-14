@@ -50,7 +50,6 @@ nav a:hover {
 /* Main Container */
 .container {
   flex: 1;
-  max-width: 1000px;
   margin: 2rem auto;
   padding: 0 1rem;
   flex-wrap: wrap;
@@ -64,8 +63,8 @@ nav a:hover {
   padding-right: 2rem;
 }
 .sidebar img {
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   margin-bottom: 1rem;
 }
