@@ -102,6 +102,16 @@ nav a:hover {
   margin-top: 0;
 }
 
+.project-container {
+  padding: 0 5vw; /* Adds horizontal margins */
+}
+
+@media (min-width: 1024px) {
+  .project-container {
+    padding: 0 8vw; /* A bit wider for desktop screens */
+  }
+}
+
 .project-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -140,6 +150,7 @@ nav a:hover {
   color: #333;
   line-height: 1.5;
 }
+
 
 /* Footer */
 footer {
