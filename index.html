@@ -9,13 +9,24 @@
 </head>
 <body>
   <header>
-    <h1>Sieun Park</h1>
-    <nav>
+    <h1 class="desktop-title">Sieun Park</h1>
+    <nav class="desktop-nav">
       <a href="index.html">About</a>
       <a href="publications.html">Publications</a>
       <a href="projects.html">Projects</a>
       <a href="contact.html">Contact</a>
-    </nav>
+    </nav> 
+    <button class="mobile-menu-button" onclick="openMobileMenu()">☰</button>
+  
+    <div class="mobile-nav" id="mobileNav">
+      <button class="close-button" onclick="closeMobileMenu()">X</button>
+      <nav class="mobile-nav-links">
+        <a href="index.html">About</a>
+        <a href="publications.html">Publications</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
   </header>
 
   <div class="container">
@@ -49,8 +60,18 @@
     </main>
   </div>
 
+</div>
   <footer>
     <p>&copy; 2025 Sieun Park</p>
   </footer>
+  <script>
+    function openMobileMenu() {
+      document.getElementById("mobileNav").classList.add("open");
+    }
+    
+    function closeMobileMenu() {
+      document.getElementById("mobileNav").classList.remove("open");
+    }
+    </script>
 </body>
 </html>
