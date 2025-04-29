@@ -193,6 +193,9 @@ a:hover {
 
 /* Responsive Adjustment */
 @media (max-width: 600px) {
+  header {
+    padding: 1rem;
+  }
   header nav {
     display: none;
   }
@@ -204,7 +207,7 @@ a:hover {
     background: none;
     border: none;
     cursor: pointer;  
-    margin-right: 0;
+    margin-right: 0.5rem;
   }
 
   .mobile-menu-button:hover {
