@@ -1,5 +1,5 @@
 ---
-title: Projects
+title: Interests
 layout: page
 ---
 
