@@ -34,10 +34,10 @@ layout: page
   <li>Research Prototyping & User Studies</li>
 </ul>
 
-<h2>Projects</h2>
-
+<!-- <h2>Projects</h2> -->
+<!-- 
 <ul>
   <li>Research Publications</li>
   <li>Selected Projects</li>
   <li>GitHub Repositories</li>
-</ul>
+</ul> -->
