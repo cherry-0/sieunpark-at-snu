@@ -5,39 +5,34 @@ layout: page
 
 ![Profile Image]({% if site.external-image %}{{ site.picture }}{% else %}{{ site.url }}/{{ site.picture }}{% endif %})
 
-<p>Hi! I am a PhD student in the Interdisciplinary Program in Artificial Intelligence at Seoul National University (SNU), advised by <a href="https://youngkilee.blogspot.com/p/about-me.html">Prof. Youngki Lee</a> in the <a href="https://hcs.snu.ac.kr/">Human-Centered Computer Systems Lab</a>.</p>
+<p>Hi! I am a MS/PhD student in the Interdisciplinary Program in Artificial Intelligence at Seoul National University (SNU), advised by <a href="https://youngkilee.blogspot.com/p/about-me.html">Prof. Youngki Lee</a> in the <a href="https://hcs.snu.ac.kr/">Human-Centered Computer Systems Lab</a>.</p>
 
-<p>My research focuses on building human-aligned AI systems that are usable, adaptive, and grounded in real-world contexts. I explore how <strong>large language models</strong> and <strong>mixed reality interfaces</strong> can support people in everyday tasks—especially in areas where interaction is socially sensitive, privacy is critical, or guidance is needed in situ.</p>
+<p>I envision a future where an intelligent agent accompanies me through XR devices—always present, assisting, and safeguarding my interactions.</p>
 
-<p>Currently, I work across three application domains:</p>
+<p>My research lies on two complementary directions:  
+(1) <strong>XR interaction & privacy</strong>, to design trustworthy, human-centered experiences, and  
+(2) <strong>LLM-based systems</strong>, to enhance the agent’s reasoning and intent understanding.</p>
+
+<p>Currently, I am working on:</p>
 <ul>
-  <li>Privacy-aware video streaming & generation for collaboration in virtual environments</li>
-  <li>Adaptive assistance for learning and physical interaction</li>
-  <li>LLM-powered task support on mobile platforms</li>
+  <li><strong>Inference-aware privacy</strong>: developing OS-level safeguards against hidden or unauthorized inferences by AI models inside apps.</li>
+  <li><strong>LLM-powered mobile agents</strong>: building and evaluating agentic pipelines for task automation and app interaction on mobile platforms.</li>
+  <li><strong>Child learning support in home settings</strong>: designing scaffolding systems to support socially sensitive educational interactions, grounded in learning theory.</li>
+  <li><strong>XR affordance generation</strong>: enabling 3D objects to gain on-demand functionality through LLM- or VLM-guided interpretation of user intent or demonstrations.</li>
 </ul>
 
-<p>My goal is to design systems that not only understand user intent and context, but also respond in ways that enhance learning, agency, and trust.</p>
+<p>My goal is to design systems that respect user privacy while extending practical utility in XR and mobile environments, offering support that is adaptive, transparent, and trustworthy.</p>
 
-<p>I am always open to conversations about research or related ideas. </p>
-<p>Feel free to reach out at: <strong>sieun.park [at] hcs [dot] snu [dot] ac [dot] kr</strong></p>
+<p>If you’d like to discuss research ideas or potential collaborations, feel free to reach out at: <strong>sieun.park [at] hcs [dot] snu [dot] ac [dot] kr</strong></p>
+
 
 <h2>Skills</h2>
 
 <ul class="skill-list">
-  <li>Human-Computer Interaction (HCI)</li>
-  <li>Extended Reality (XR) Interfaces</li>
-  <li>Privacy-Aware System Design</li>
-  <li>Large Language Model (LLM) Applications</li>
-  <li>HTML, CSS, JavaScript</li>
-  <li>Python, Kotlin</li>
-  <li>Git & GitHub</li>
-  <li>Research Prototyping & User Studies</li>
+  <li>Human-Computer Interaction (HCI) research methods and study design</li>
+  <li>Extended Reality (XR) interaction design and affordance augmentation</li>
+  <li>Privacy-aware and inference-resistant system design</li>
+  <li>Large Language Model (LLM) integration and pipeline development</li>
+  <li>Prototyping and evaluation of interactive systems</li>
+  <li>Qualitative and quantitative analysis of user data</li>
 </ul>
-
-<!-- <h2>Projects</h2> -->
-<!-- 
-<ul>
-  <li>Research Publications</li>
-  <li>Selected Projects</li>
-  <li>GitHub Repositories</li>
-</ul> -->

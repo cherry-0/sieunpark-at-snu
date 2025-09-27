@@ -3,7 +3,8 @@ title: Publications
 layout: page
 ---
 
-## 2025
+## Publications
+### 2025
 
 **Sangwon Park**, **Sieun Park**, HyunA Seo, Minkyu Shim, Youngki Lee  
 *TaleTrain: AI Scaffolding for Parent–Child Video Story Retelling at Home*  
