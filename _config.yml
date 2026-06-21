@@ -1,6 +1,6 @@
 # main text of home
 title: Sieun Park
-bio: Building Trustworthy AI Agents for XR and Mobile Computing
+bio: Mobile Systems Researcher | AI Privacy · Accountable Mobile AI
 
 # twitter summary info
 description: MS/PhD Student in Artificial Intelligence at Seoul National University
@@ -25,6 +25,13 @@ url: https://cherry-0.github.io/sieunpark-at-snu
 
 permalink: /:title/
 
+# Dedicated pages for talks/posters. One file per presentation under _presentations/.
+# Each file's front matter (title, venue, order, chips) is the per-presentation config.
+collections:
+  presentations:
+    output: true
+    permalink: /presentations/:name/
+
 # To enable google analytics, supply your token below
 # analytics-google: 'UA-MYANALYTICS'
 
@@ -44,7 +51,7 @@ email: sieun.park@hcs.snu.ac.kr
 authors:
   sieunpark:
     name: Sieun Park
-    bio: Building Trustworthy AI Agents for XR and Mobile Computing
+    bio: Mobile Systems Researcher | AI Privacy · Accountable Mobile AI
     external-image: false
     picture: assets/images/profile.jpg
     # twitter: yourtwitterhandle

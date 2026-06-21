@@ -1,0 +1,42 @@
+---
+layout: default
+---
+{% include header.html %}
+
+<article class="project">
+    <h1 class="project-title">{{ page.title }}</h1>
+    {% if page.venue or page.date %}
+    <p class="project-venue">
+        {%- if page.venue %}{{ page.venue }}{% endif -%}
+        {%- if page.venue and page.date %} · {% endif -%}
+        {%- if page.date %}{{ page.date | date: "%B %Y" }}{% endif -%}
+    </p>
+    {% endif %}
+
+    {{ content }}
+
+    <p class="project-back"><a href="{{ '/publications' | relative_url }}">&laquo; Back to Papers &amp; Presentations</a></p>
+</article>
+
+{% include footer.html %}
+
+<style>
+.project { margin-top: 125px; }
+.project-title { text-align: center; margin-bottom: 0.25em; }
+.project-venue { text-align: center; color: #888; font-style: italic; margin-top: 0; margin-bottom: 2.5em; }
+.project h2 { margin-top: 1.8em; }
+.project-back { margin-top: 3.5em; }
+
+/* Reusable embed helpers — drop your real PDF/video/code in and replace the placeholder. */
+.video-embed { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 8px; background: #f3f3f3; }
+.video-embed iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; }
+.pdf-embed { width: 100%; height: 600px; border: 1px solid #e2e2e2; border-radius: 8px; }
+.embed-placeholder {
+    border: 1px dashed #c9b8e8; border-radius: 8px; background: #f7f4fc;
+    color: #6b5b95; padding: 2.2em 1em; text-align: center; font-size: 0.95em;
+}
+@media (prefers-color-scheme: dark) {
+    .embed-placeholder { border-color: #5a4a78; background: rgba(147,0,255,0.08); color: #b9a7df; }
+    .pdf-embed { border-color: #444; }
+}
+</style>

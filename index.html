@@ -2,3 +2,65 @@
 layout: page
 title: Home
 ---
+
+<div id="welcome-modal" class="welcome-modal" role="dialog" aria-modal="true" aria-labelledby="welcome-modal-title" hidden>
+  <div class="welcome-modal__backdrop" data-close></div>
+  <div class="welcome-modal__box">
+    <button class="welcome-modal__close" type="button" data-close aria-label="Close">&times;</button>
+    <h2 id="welcome-modal-title" class="welcome-modal__title">Hi MobiSys! Welcome to Sieun's website!</h2>
+    <ul class="welcome-modal__links">
+      <li><a href="{{ '/presentations/mobisys-26/' | relative_url }}#presentation-video">▶&nbsp; See the presentation video</a></li>
+      <li><a href="https://docs.google.com/document/d/1Gi0sKg0qG1ni39iyNJdp1crSCYO6B6xjQkiVwjcs1t4/edit?usp=drive_link" target="_blank" rel="noopener">✍&nbsp; Write down questions / comments</a></li>
+    </ul>
+  </div>
+</div>
+
+<style>
+.welcome-modal { position: fixed; inset: 0; z-index: 1000; display: flex; align-items: center; justify-content: center; }
+.welcome-modal[hidden] { display: none; }
+.welcome-modal__backdrop { position: absolute; inset: 0; background: rgba(20,10,40,0.55); backdrop-filter: blur(2px); }
+.welcome-modal__box {
+    position: relative; z-index: 1; width: min(90vw, 430px);
+    background: #fff; border-radius: 16px; padding: 2.2em 1.9em 1.9em;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.3); text-align: center;
+    animation: welcomePop .25s ease-out;
+}
+@keyframes welcomePop { from { transform: translateY(12px) scale(.98); opacity: 0; } to { transform: none; opacity: 1; } }
+.welcome-modal__close { position: absolute; top: 8px; right: 14px; border: none; background: none; font-size: 1.9em; line-height: 1; color: #999; cursor: pointer; }
+.welcome-modal__close:hover { color: #4b0082; }
+.welcome-modal__title { margin: 0 0 1.1em; font-size: 1.3em; color: #4b0082; line-height: 1.35; }
+.welcome-modal__links { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 0.8em; }
+.welcome-modal__links a {
+    display: block; padding: 0.75em 1em;
+    border: 1.5px solid #4b0082; border-radius: 999px;
+    color: #4b0082; text-decoration: none; font-weight: 600;
+    transition: all .15s ease-in-out;
+}
+.welcome-modal__links a:hover { background: #4b0082; color: #fff; }
+@media (prefers-color-scheme: dark) {
+    .welcome-modal__box { background: #1e1e24; }
+    .welcome-modal__title { color: #c79cff; }
+    .welcome-modal__close { color: #aaa; }
+    .welcome-modal__links a { color: #c79cff; border-color: #c79cff; }
+    .welcome-modal__links a:hover { background: #c79cff; color: #1a1a1a; }
+}
+</style>
+
+<script>
+(function () {
+  var modal = document.getElementById('welcome-modal');
+  if (!modal) return;
+  // Shows once per browser session. Change to localStorage to show once ever,
+  // or remove the `seen` guard to show on every visit.
+  var KEY = 'mobisysWelcomeSeen';
+  function close() { modal.setAttribute('hidden', ''); try { sessionStorage.setItem(KEY, '1'); } catch (e) {} }
+  var seen = null;
+  try { seen = sessionStorage.getItem(KEY); } catch (e) {}
+  if (!seen) modal.removeAttribute('hidden');
+  var closers = modal.querySelectorAll('[data-close], .welcome-modal__links a');
+  for (var i = 0; i < closers.length; i++) { closers[i].addEventListener('click', close); }
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && !modal.hasAttribute('hidden')) close();
+  });
+}());
+</script>

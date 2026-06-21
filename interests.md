@@ -1,5 +1,5 @@
 ---
-title: Interests
+title: Projects
 layout: page
 ---
 
@@ -46,15 +46,12 @@ layout: page
 </div>
 
 <style>
+/* Linear, single-column layout */
 .interest-grid {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 1.75em;
+    grid-template-columns: 1fr;
+    gap: 2.25em;
     margin: 1.5em 0 2.5em;
-}
-
-@media (max-width: 640px) {
-    .interest-grid { grid-template-columns: 1fr; }
 }
 
 .interest-card {
@@ -62,12 +59,15 @@ layout: page
     flex-direction: column;
 }
 
+/* Full-width light-purple header band: no border, no rounded corners */
 .interest-title {
-    background: #ffffff;
+    background: #ece3fb;
     color: #4b0082;
-    border: 2px solid #4b0082;
-    border-radius: 6px;
-    padding: 0.55em 0.9em;
+    border: none;
+    border-radius: 0;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.6em 0.9em;
     font-weight: 600;
     font-size: 1.05em;
     text-align: center;
@@ -76,8 +76,8 @@ layout: page
 
 @media (prefers-color-scheme: dark) {
     .interest-title {
-        color: #9300ff;
-        border-color: #9300ff;
+        background: rgba(147, 0, 255, 0.18);
+        color: #c79cff;
     }
 }
 
