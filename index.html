@@ -50,8 +50,7 @@ title: Home
 (function () {
   var modal = document.getElementById('welcome-modal');
   if (!modal) return;
-  // Shows once per browser session. Change to localStorage to show once ever,
-  // or remove the `seen` guard to show on every visit.
+  /* Shows once per browser session. Swap sessionStorage->localStorage for once-ever; remove the `seen` guard to show every visit. */
   var KEY = 'mobisysWelcomeSeen';
   function close() { modal.setAttribute('hidden', ''); try { sessionStorage.setItem(KEY, '1'); } catch (e) {} }
   var seen = null;
