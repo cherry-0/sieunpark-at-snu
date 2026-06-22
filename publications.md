@@ -37,6 +37,14 @@ layout: page
 </div>
 
 <style>
+/* Purple section headings */
+#publications,
+#presentations { color: #4b0082; }
+@media (prefers-color-scheme: dark) {
+    #publications,
+    #presentations { color: #c79cff; }
+}
+
 /* Publications */
 .publication { margin-bottom: 2em; padding-bottom: 1em; border-bottom: 1px solid #eee; }
 .publication:last-child { border-bottom: none; }

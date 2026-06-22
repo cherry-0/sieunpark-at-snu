@@ -4,3 +4,6 @@ _site
 Gemfile.lock
 .bundle
 vendor/
+
+# Large source videos — transcode to a web MP4 and commit that instead
+*.mov

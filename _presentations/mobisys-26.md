@@ -1,5 +1,5 @@
 ---
-title: "MobiSys '26"
+title: "Governing Hidden Inference: Output-Centric Privacy Control for AI Apps"
 layout: project
 venue: "ACM MobiSys 2026"
 date: 2026-06-01
@@ -24,24 +24,22 @@ chips:
 ## Overview
 
 <!-- Write or embed the project overview here. -->
-A short description of the MobiSys '26 work goes here.
+A short description of this work goes here.
 
 ## Paper
 
 <object class="pdf-embed" data="{{ '/assets/MobiSys_26_Poster.pdf' | relative_url }}" type="application/pdf">
-  <p>📄 <a href="{{ '/assets/MobiSys_26_Poster.pdf' | relative_url }}">Open the MobiSys '26 poster (PDF)</a></p>
+  <p>📄 <a href="{{ '/assets/MobiSys_26_Poster.pdf' | relative_url }}">Open the poster (PDF)</a></p>
 </object>
 
 <p><a href="{{ '/assets/MobiSys_26_Poster.pdf' | relative_url }}">↓ Download the poster (PDF)</a></p>
 
 ## Presentation video
 
-<!-- To embed the video: replace VIDEO_ID with your YouTube id (or use a Drive/Vimeo embed URL).
-<div class="video-embed">
-  <iframe src="https://www.youtube.com/embed/VIDEO_ID" title="MobiSys '26 presentation video" allowfullscreen></iframe>
-</div>
--->
-<div class="embed-placeholder">▶ Presentation video will be embedded here.</div>
+<video class="project-video" controls preload="metadata" playsinline poster="{{ '/assets/videos/mobisys26-poster.jpg' | relative_url }}">
+  <source src="{{ '/assets/videos/mobisys26-poster.mp4' | relative_url }}" type="video/mp4" />
+  Your browser can’t play this embedded video. <a href="{{ '/assets/videos/mobisys26-poster.mp4' | relative_url }}">Download the video (MP4)</a>.
+</video>
 
 ## Code
 

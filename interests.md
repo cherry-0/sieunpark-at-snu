@@ -9,7 +9,7 @@ layout: page
 
   <article class="interest-card">
     <div class="interest-title">Inference-Aware Privacy</div>
-    <img class="interest-image" src="{{ '/assets/images/sample_teaser.png' | relative_url }}" alt="Inference-Aware Privacy concept (placeholder)" />
+    <img class="interest-image" src="{{ '/assets/images/teasers/teaser_inference_privacy.png' | relative_url }}" alt="Inference-Aware Privacy teaser" />
     <ul class="interest-body">
       <li>Developing OS-level safeguards to prevent hidden or unauthorized inferences by AI models</li>
       <li>Exploring user-facing mechanisms that make inference risks visible and manageable</li>
@@ -17,17 +17,8 @@ layout: page
   </article>
 
   <article class="interest-card">
-    <div class="interest-title">XR Affordance Augmentation</div>
-    <img class="interest-image" src="{{ '/assets/images/sample_teaser.png' | relative_url }}" alt="XR Affordance Augmentation concept (placeholder)" />
-    <ul class="interest-body">
-      <li>Enabling 3D objects to gain on-demand functionality in XR through LLM- or VLM-guided interpretation</li>
-      <li>Investigating how affordance generation can support collaboration and cross-spatial interaction</li>
-    </ul>
-  </article>
-
-  <article class="interest-card">
     <div class="interest-title">LLM-Powered Mobile Agents</div>
-    <img class="interest-image" src="{{ '/assets/images/sample_teaser.png' | relative_url }}" alt="LLM-Powered Mobile Agents concept (placeholder)" />
+    <img class="interest-image" src="{{ '/assets/images/teasers/teaser_llm_agent.png' | relative_url }}" alt="LLM-Powered Mobile Agents teaser" />
     <ul class="interest-body">
       <li>Building and evaluating agentic pipelines for task automation and app interaction on mobile platforms</li>
       <li>Studying interaction design for reliable, human-aligned mobile agents</li>
@@ -36,10 +27,19 @@ layout: page
 
   <article class="interest-card">
     <div class="interest-title">Child Learning Support</div>
-    <img class="interest-image" src="{{ '/assets/images/sample_teaser.png' | relative_url }}" alt="Child Learning Support concept (placeholder)" />
+    <img class="interest-image" src="{{ '/assets/images/teasers/teaser_child_learning_support.png' | relative_url }}" alt="Child Learning Support teaser" />
     <ul class="interest-body">
       <li>Designing incremental scaffolding systems for children’s storytelling in home settings</li>
       <li>Grounding system design in educational theory (e.g., ZPD) to balance guidance and autonomy</li>
+    </ul>
+  </article>
+
+  <article class="interest-card">
+    <div class="interest-title">XR Affordance Augmentation</div>
+    <img class="interest-image" src="{{ '/assets/images/teasers/teaser_xr_affordance.png' | relative_url }}" alt="XR Affordance Augmentation teaser" />
+    <ul class="interest-body">
+      <li>Enabling 3D objects to gain on-demand functionality in XR through LLM- or VLM-guided interpretation</li>
+      <li>Investigating how affordance generation can support collaboration and cross-spatial interaction</li>
     </ul>
   </article>
 

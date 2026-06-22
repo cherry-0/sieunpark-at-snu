@@ -15,7 +15,8 @@ Presented at the CHI 2025 Workshop. Short description goes here.
 
 ## Paper
 
-<!-- Drop the PDF in assets/ and uncomment:
-<embed class="pdf-embed" src="{{ '/assets/chi25-workshop.pdf' | relative_url }}" type="application/pdf" />
--->
-<div class="embed-placeholder">📄 Paper PDF will be embedded here.</div>
+<object class="pdf-embed" data="{{ '/assets/CHI_25_Workshop_Poster.pdf' | relative_url }}" type="application/pdf">
+  <p>📄 <a href="{{ '/assets/CHI_25_Workshop_Poster.pdf' | relative_url }}">Open the CHI '25 workshop poster (PDF)</a></p>
+</object>
+
+<p><a href="{{ '/assets/CHI_25_Workshop_Poster.pdf' | relative_url }}">↓ Download the poster (PDF)</a></p>
