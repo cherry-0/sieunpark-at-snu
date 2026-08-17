@@ -17,8 +17,6 @@ chips:
     anchor: paper
   - label: VIDEO
     anchor: presentation-video
-  - label: CODE
-    anchor: code
 ---
 
 ## Overview
@@ -40,8 +38,3 @@ A short description of this work goes here.
   <source src="{{ '/assets/videos/mobisys26-poster.mp4' | relative_url }}" type="video/mp4" />
   Your browser can’t play this embedded video. <a href="{{ '/assets/videos/mobisys26-poster.mp4' | relative_url }}">Download the video (MP4)</a>.
 </video>
-
-## Code
-
-<!-- Link or embed your repository. -->
-<div class="embed-placeholder">💻 Code / materials will be linked here.</div>
