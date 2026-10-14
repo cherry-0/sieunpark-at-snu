@@ -115,4 +115,5 @@ exclude:
     "Gemfile.lock",
     "FAQ.md",
     "vendor",
+    "assets/cv_source",
   ]
