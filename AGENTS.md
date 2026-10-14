@@ -89,7 +89,7 @@ Run `./_scripts/precheck.sh --help` for all options.
 ## Editing conventions
 
 - Site config lives in `_config.yml` — name, bio, social handles, nav toggles.
-- Profile picture path: `assets/images/profile.jpg`. CV path: `assets/CV_2025_Sieun.pdf`
+- Profile picture path: `assets/images/profile.jpg`. CV path: `assets/CV_2026_Sieun.pdf`
   (also referenced in `_config.yml` as `resume-url`).
 - URLs in templates use `| relative_url` (see `_includes/nav.html`) so the site works under
   the `/sieunpark-at-snu` project path on GitHub Pages. Prefer `relative_url` for any new
