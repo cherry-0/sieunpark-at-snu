@@ -5,26 +5,27 @@
 \begin{document}
 
 \noindent
-\begin{tabularx}{\linewidth}{@{}X >{\raggedleft\arraybackslash}m{2.85cm}@{}}
+\ifdefined\cvnophoto\def\photocolwidth{0pt}\else\def\photocolwidth{2.85cm}\fi
+\begin{tabularx}{\linewidth}{@{}X >{\raggedleft\arraybackslash}m{\photocolwidth}@{}}
   {%
     {\LARGE\bfseries Sieun Park}\par
     \vspace{0.25em}
     {\large Mobile Systems Researcher}\par
     \vspace{0.15em}
-    {\small AI Privacy \textbar{} Accountable Mobile AI}\par
+    {\small \kw{Mobile \& XR AI Privacy} \textbar{} \kw{User-Configurable Privacy Control}}\par
     \vspace{0.55em}
-    {\small\color{muted}
-      Seoul, South Korea \textbf{\textperiodcentered}\
-      \href{mailto:sieun.park@hcs.snu.ac.kr}{sieun.park@hcs.snu.ac.kr}\par
-      \href{https://cherry-0.github.io/sieunpark-at-snu/}{cherry-0.github.io/sieunpark-at-snu} \textbf{\textperiodcentered}\
-      \href{https://www.linkedin.com/in/sieun-park-at-snu}{LinkedIn}
+    {\small\color{muted}\raggedright
+      \contactitem{\faMapMarker*}{Seoul, South Korea}\hspace{1.2em}
+      \contactitem{\faEnvelope[regular]}{\href{mailto:sieun.park@hcs.snu.ac.kr}{sieun.park@hcs.snu.ac.kr}}\ifdefined\cvnophoto\hspace{1.2em}\else\par\fi
+      \contactitem{\faLink}{\href{https://cherry-0.github.io/sieunpark-at-snu/}{cherry-0.github.io/sieunpark-at-snu}}\hspace{1.2em}
+      \contactitem{\faLinkedin}{\href{https://www.linkedin.com/in/sieun-park-at-snu}{sieun-park-at-snu}}\par
     }
   }
-  & \includegraphics[width=2.8cm]{id_photo.png}
+  & \ifdefined\cvnophoto\else\includegraphics[width=2.8cm]{id_photo.png}\fi
 \end{tabularx}
 
 \csection{Summary}{\small
-  Mobile systems researcher studying privacy and accountability in LLM/VLM-enabled apps. I characterize how model-derived private attributes propagate through real app workflows and design attribute-, workflow-, and channel-level protections. Earlier work spans AI scaffolding for parent--child storytelling and cross-spatial interaction.
+  Mobile systems researcher studying \kw{inference-induced privacy risks} in LLM/VLM-enabled \kw{mobile and XR apps}. I trace how model-derived attributes escape input permissions and leak across app output channels, and build \kw{user-configurable privacy controls} grounded in \kw{composable privacy policies} across user, app, and system layers.
 }
 
 \csection{Education}{\small
@@ -36,8 +37,10 @@
 \csection{Research Experience}{\small
   \resumeentry{Graduate Researcher}{Sept 2024 -- Present}{Human-Centered Computer Systems Lab, Seoul National University}{Seoul, South Korea}
   \begin{itemize}
-    \item Conduct research on mobile AI privacy and accountable mobile systems, focusing on how LLM/VLM-enabled apps infer and expose private attributes in real app workflows.
-    \item Characterize how model-derived attributes travel through UI, storage, network, voice, and cross-app channels, and develop attribute-, workflow-, and channel-level privacy protections.
+    \item XR \& Mobile Privacy
+    \item User-Configurable Privacy Controls
+    \item Inference-Induced Privacy Risks
+    \item Privacy Policy Specification \& Composition
   \end{itemize}
 
 }
@@ -46,14 +49,14 @@
   \resumeentry{Head Teaching Assistant, Software Development Principles and Practices}{Sept 2026 -- Dec 2026}{Seoul National University}{Seoul, South Korea}
 
   \vspace{0.35em}
-  \resumeentry{Teaching Assistant, Software Development Principles and Practices}{Sept 2025 -- Dec 2025}{Seoul National University}{Seoul, South Korea}
-  \begin{itemize}
+  \resumeentry{\href{https://hcs.snu.ac.kr/course/?coursename=Software\%20Development\%20Principles\%20and\%20Practices}{Teaching Assistant, Software Development Principles and Practices}}{Sept 2025 -- Dec 2025}{Seoul National University}{Seoul, South Korea}
+  \begin{itemize}[before=\fontsize{8pt}{9.5pt}\selectfont]
     \item Supported programming assignments, code reviews, and team-based software projects.
   \end{itemize}
 
   \vspace{0.25em}
   \resumeentry{Teaching Assistant, Education and Artificial Intelligence}{Mar 2023 -- Jun 2023}{Seoul National University}{Seoul, South Korea}
-  \begin{itemize}
+  \begin{itemize}[before=\fontsize{8pt}{9.5pt}\selectfont]
     \item Mentored project teams designing AI-driven educational applications and provided feedback on technical implementation and pedagogical grounding.
   \end{itemize}
 }
@@ -73,7 +76,7 @@
 }
 
 \csection{Research Areas \& Languages}{\small
-  \textbf{Research Areas:} Mobile AI Privacy, Accountable Mobile Systems, HCI \& XR Systems\par
+  \textbf{Research Areas:} Mobile AI Privacy, Accountable Mobile Systems, HCI\par
   \vspace{0.2em}
   \textbf{Languages:} Korean (native), English (professional working proficiency)
 }

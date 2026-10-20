@@ -28,11 +28,17 @@
 \RequirePackage{enumitem}
 \RequirePackage{microtype}
 \RequirePackage[hidelinks]{hyperref}
+\RequirePackage{fontawesome5}
 \urlstyle{same}
 
 \definecolor{sectioncolor}{HTML}{2E2E2E}
 \definecolor{muted}{HTML}{5F6368}
 \definecolor{rulecolor}{HTML}{B8BCC2}
+% Site accent purple ($delta in _sass/base/variables.sass)
+\definecolor{accent}{HTML}{4B0082}
+\newcommand{\kw}[1]{\textcolor{accent}{#1}}
+% Header contact item: icon + short label, kept on one line
+\newcommand{\contactitem}[2]{\mbox{#1\hspace{0.4em}#2}}
 
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{0pt}

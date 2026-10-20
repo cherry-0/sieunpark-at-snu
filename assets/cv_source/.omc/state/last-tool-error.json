@@ -1,0 +1,7 @@
+{
+  "tool_name": "Bash",
+  "tool_input_preview": "{\"command\":\"cd /Users/sieun/git-repos/Branding/sieunpark-at-snu && cat interests.md | head -80; echo ======; ls _posts presentations 2>/dev/null; echo ======; sed -n 1,60p about.md\",\"description\":\"Rea...",
+  "error": "Exit code 1\n---\ntitle: Projects\nlayout: page\n---\n\n## Research Projects\n\n<div class=\"interest-grid\">\n\n  <article class=\"interest-card\">\n    <div class=\"interest-title\">Inference-Aware Privacy</div>\n    <img class=\"interest-image\" src=\"{{ '/assets/images/teasers/teaser_inference_privacy.png' | relative_url }}\" alt=\"Inference-Aware Privacy teaser\" />\n    <ul class=\"interest-body\">\n      <li>Developing OS-level safeguards to prevent hidden or unauthorized inferences by AI models</li>\n      <li>Explo...",
+  "timestamp": "2026-10-20T06:28:29.463Z",
+  "retry_count": 1
+}
